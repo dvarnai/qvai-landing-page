@@ -44,24 +44,6 @@ const HowItWorksSection: React.FC = () => {
   return (
     <div id="hogyan-mukodik" className="relative z-10 px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-20">
       <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-purple-900/10 backdrop-blur-sm"></div>
-      <div className="absolute inset-0">
-        {[...Array(8)].map((_, index) => (
-          <div
-            key={`circle-${index}`}
-            className="absolute rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10"
-            style={{
-              width: Math.random() * 300 + 100 + 'px',
-              height: Math.random() * 300 + 100 + 'px',
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: `float ${Math.random() * 10 + 20}s infinite ease-in-out`,
-              animationDelay: `${Math.random() * 5}s`,
-              opacity: 0.1 + (Math.random() * 0.1),
-              filter: 'blur(40px)'
-            }}
-          />
-        ))}
-      </div>
 
       <h2 className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">

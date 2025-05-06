@@ -19,10 +19,14 @@ const AnimatedBackground: React.FC<AnimatedBackgroundProps> = ({ scrollY, time }
         }}
       />
 
-      {/* Grid lines */}
+      {/* Grid lines - much wider element to allow extensive movement */}
       <div
-        className="absolute inset-0 opacity-10"
+        className="absolute opacity-10"
         style={{
+          top: '-500px',
+          left: '-500px',
+          right: '-500px',
+          bottom: '-500px',
           backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.5) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.5) 76%, transparent 77%, transparent)',
           backgroundSize: '50px 50px',
           transform: `translate(${-scrollY * 0.1}px, ${scrollY * 0.1}px)`,
