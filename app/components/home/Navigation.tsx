@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, Menu, X } from 'lucide-react';
+import QvAILogo from '../shared/QvAILogo';
 
 const Navigation: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,27 +27,22 @@ const Navigation: React.FC = () => {
     }`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <div className="relative z-10">
-          <div
-            className="text-3xl font-['Montserrat'] font-light tracking-tight">
-            <span className="text-white">Q</span>
-            <span className="text-[#ef4444]">v</span>
-            <span className="text-white">AI</span>
-          </div>
-          
-          {/* Subtle glow effect behind logo */}
-          <div className="absolute -inset-4 bg-blue-500/10 rounded-full blur-xl -z-10"></div>
-        </div>
+        <QvAILogo />
 
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex items-center space-x-1">
-          {['Szolgáltatások', 'Hogyan működik', 'Technológiáink', 'Kapcsolat'].map((item, i) => (
+          {[
+            { label: 'Szolgáltatások', href: '#szolgáltatások' },
+            { label: 'Hogyan működik', href: '#hogyan-mukodik' },
+            { label: 'Technológiáink', href: '#technológiáink' },
+            { label: 'Kapcsolat', href: '#kapcsolat' }
+          ].map((item, i) => (
             <a 
               key={i}
-              href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
+              href={item.href}
               className="relative px-4 py-2 text-sm font-medium text-gray-200 hover:text-white transition-colors duration-200 group"
             >
-              <span className="relative z-10">{item}</span>
+              <span className="relative z-10">{item.label}</span>
               <span className="absolute inset-0 rounded-full bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
             </a>
           ))}
@@ -77,14 +73,19 @@ const Navigation: React.FC = () => {
         mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className="flex flex-col items-center justify-center h-full space-y-8 p-8">
-          {['Szolgáltatások', 'Hogyan működik', 'Technológiáink', 'Kapcsolat'].map((item, i) => (
+          {[
+            { label: 'Szolgáltatások', href: '#szolgáltatások' },
+            { label: 'Hogyan működik', href: '#hogyan-mukodik' },
+            { label: 'Technológiáink', href: '#technológiáink' },
+            { label: 'Kapcsolat', href: '#kapcsolat' }
+          ].map((item, i) => (
             <a 
               key={i}
-              href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
+              href={item.href}
               className="text-xl font-medium text-gray-200 hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
-              {item}
+              {item.label}
             </a>
           ))}
           <button 
