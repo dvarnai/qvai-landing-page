@@ -23,7 +23,7 @@ const ContactSection: React.FC = () => {
               </div>
               <div>
                 <div className="font-bold">Email</div>
-                <div className="text-gray-400">info@qvai.hu</div>
+                <div className="text-gray-400">hello@qvai.hu</div>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -41,7 +41,7 @@ const ContactSection: React.FC = () => {
               </div>
               <div>
                 <div className="font-bold">Cím</div>
-                <div className="text-gray-400">1052 Budapest, Deák Ferenc utca 10.</div>
+                <div className="text-gray-400">1048 Budapest, Székpatak utca 19.</div>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ const ContactSection: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium mb-2">Név</label>
-                <input 
+                <input
                   type="text"
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 text-white"
                   placeholder="Az Ön neve"
@@ -59,7 +59,7 @@ const ContactSection: React.FC = () => {
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Vállalat</label>
-                <input 
+                <input
                   type="text"
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 text-white"
                   placeholder="Cég neve"
@@ -68,7 +68,7 @@ const ContactSection: React.FC = () => {
             </div>
             <div>
               <label className="block text-sm font-medium mb-2">Email</label>
-              <input 
+              <input
                 type="email"
                 className="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 text-white"
                 placeholder="email@pelda.hu"
@@ -76,7 +76,7 @@ const ContactSection: React.FC = () => {
             </div>
             <div>
               <label className="block text-sm font-medium mb-2">Telefon</label>
-              <input 
+              <input
                 type="tel"
                 className="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 text-white"
                 placeholder="+36 1 234 5678"

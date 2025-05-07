@@ -7,7 +7,6 @@ import HeroSection from '../components/home/HeroSection';
 import ServicesSection from '../components/home/ServicesSection';
 import HowItWorksSection from '../components/home/HowItWorksSection';
 import TechnologySection from '../components/home/TechnologySection';
-import FutureVisionSection from '../components/home/FutureVisionSection';
 import ContactSection from '../components/home/ContactSection';
 import CallToActionSection from '../components/home/CallToActionSection';
 import Footer from '../components/home/Footer';
@@ -47,7 +46,6 @@ const Home: React.FC = () => {
       <ServicesSection />
       <HowItWorksSection />
       <TechnologySection />
-      <FutureVisionSection />
       <ContactSection />
       <CallToActionSection />
       <Footer />
@@ -56,9 +54,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-
-// Server loader function to handle GET requests
-export async function loader() {
-  // You can fetch data here if needed
-  return {};
-}

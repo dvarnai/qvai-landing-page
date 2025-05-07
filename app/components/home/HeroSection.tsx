@@ -71,7 +71,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ time }) => {
 
             <div className="md:w-1/2 mb-12 md:mb-0 relative z-20">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 opacity-0 animate-fadeSlideUp" style={{animationDelay: '0.1s', animationFillMode: 'forwards'}}>
-                    s<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
                         AI ügynökökkel
                     </span>
                     <br/>
