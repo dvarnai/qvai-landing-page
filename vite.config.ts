@@ -5,6 +5,6 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import { ghPages } from "vite-plugin-gh-pages";
 
 export default defineConfig({
-    base: "/qvai-landing-page/",
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), ghPages()],
+    base: '/qvai-landing-page/',
+    plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
 });
