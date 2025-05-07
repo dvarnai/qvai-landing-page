@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <a href="#kapcsolat" className="hover:text-blue-400 transition">Kapcsolat</a>
         </div>
         <div className="text-gray-500 text-sm">
-          © 2025 QvAI. Minden jog fenntartva.
+          © 2025 QvAI Szolgáltató Kft. Minden jog fenntartva.
         </div>
       </div>
     </footer>
