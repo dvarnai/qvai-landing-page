@@ -39,11 +39,11 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-black to-[#050510] text-white font-sans overflow-hidden relative">
       {/* Animated background */}
-      <AnimatedBackground scrollY={scrollY} time={time} />
+      <AnimatedBackground />
 
       {/* Content sections */}
       <Navigation />
-      <HeroSection time={time} scrollY={scrollY} />
+      <HeroSection time={time} />
       <ServicesSection />
       <HowItWorksSection />
       <TechnologySection />
