@@ -3,7 +3,7 @@ import { MessageSquare, Shield, Code } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
   return (
-    <div id="kapcsolat" className="relative z-10 px-8 md:px-16 lg:px-24 py-24 bg-black/40 backdrop-blur-sm">
+    <div id="kapcsolat" className="relative z-10 px-8 md:px-16 lg:px-24 pb-24 bg-black/40 backdrop-blur-sm">
       <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
           Kapcsolat
@@ -33,15 +33,6 @@ const ContactSection: React.FC = () => {
               <div>
                 <div className="font-bold">Telefon</div>
                 <div className="text-gray-400">+36 1 234 5678</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="bg-blue-500/20 p-3 rounded-lg">
-                <Code size={20} className="text-blue-400"/>
-              </div>
-              <div>
-                <div className="font-bold">Cím</div>
-                <div className="text-gray-400">1048 Budapest, Székpatak utca 19.</div>
               </div>
             </div>
           </div>

@@ -32,12 +32,12 @@ const Navigation: React.FC = () => {
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex items-center space-x-1">
           {[
-            { label: 'Szolgáltatások', href: '#szolgáltatások' },
+            { label: 'Szolgáltatások', href: '#szolgaltatasok' },
+            { label: 'Előnyök', href: '#elonyok' },
             { label: 'Hogyan működik', href: '#hogyan-mukodik' },
-            { label: 'Technológiáink', href: '#technológiáink' },
             { label: 'Kapcsolat', href: '#kapcsolat' }
           ].map((item, i) => (
-            <a 
+            <a
               key={i}
               href={item.href}
               className="relative px-4 py-2 text-sm font-medium text-gray-200 hover:text-white transition-colors duration-200 group"
@@ -46,7 +46,7 @@ const Navigation: React.FC = () => {
               <span className="absolute inset-0 rounded-full bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
             </a>
           ))}
-          
+
           {/* Call to action button */}
           <button className="ml-4 relative group">
             <span className="absolute inset-0 rounded-md bg-gradient-to-tr from-blue-600 to-purple-600 opacity-90 group-hover:opacity-100 blur-sm transition-all duration-200 group-hover:blur-md"></span>
@@ -57,12 +57,12 @@ const Navigation: React.FC = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="lg:hidden text-white p-2 focus:outline-none" 
+        <button
+          className="lg:hidden text-white p-2 focus:outline-none"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          {mobileMenuOpen ? 
-            <X className="h-6 w-6" /> : 
+          {mobileMenuOpen ?
+            <X className="h-6 w-6" /> :
             <Menu className="h-6 w-6" />
           }
         </button>
@@ -74,12 +74,12 @@ const Navigation: React.FC = () => {
       }`}>
         <div className="flex flex-col items-center justify-center h-full space-y-8 p-8">
           {[
-            { label: 'Szolgáltatások', href: '#szolgáltatások' },
+            { label: 'Szolgáltatások', href: '#szolgaltatasok' },
+            { label: 'Előnyök', href: '#elonyok' },
             { label: 'Hogyan működik', href: '#hogyan-mukodik' },
-            { label: 'Technológiáink', href: '#technológiáink' },
             { label: 'Kapcsolat', href: '#kapcsolat' }
           ].map((item, i) => (
-            <a 
+            <a
               key={i}
               href={item.href}
               className="text-xl font-medium text-gray-200 hover:text-white"
@@ -88,7 +88,7 @@ const Navigation: React.FC = () => {
               {item.label}
             </a>
           ))}
-          <button 
+          <button
             className="mt-4 bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-md text-white font-medium"
             onClick={() => setMobileMenuOpen(false)}
           >

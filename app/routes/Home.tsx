@@ -44,8 +44,8 @@ const Home: React.FC = () => {
       <Navigation />
       <HeroSection time={time} />
       <ServicesSection />
-      <HowItWorksSection />
       <TechnologySection />
+      <HowItWorksSection />
       <ContactSection />
       <CallToActionSection />
       <Footer />

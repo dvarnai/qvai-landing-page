@@ -4,81 +4,82 @@ import { Brain, Cpu, LineChart, Shield, Zap, Database, Code, Lock } from 'lucide
 const TechnologySection = () => {
   const technologies = [
     {
-      icon: <Brain size={22} className="text-blue-500" />,
-      title: "Élvonalbeli LLM Modellek",
-      subtitle: "Nyelvfeldolgozás",
+      icon: <Brain size={24} className="text-blue-400" />,
+      title: "Nyelvi intelligencia",
+      subtitle: "Nyelvi akadályok nélküli kommunikáció, magyar nyelven is",
       color: "blue"
     },
     {
-      icon: <LineChart size={22} className="text-purple-500" />,
-      title: "Adaptív AI Megoldások",
-      subtitle: "Teljesítmény",
+      icon: <LineChart size={24} className="text-purple-400" />,
+      title: "Mérhető eredmények",
+      subtitle: "Kimutatható megtakarítások és hatékonyságnövekedés",
       color: "purple"
     },
     {
-      icon: <Cpu size={22} className="text-cyan-500" />,
-      title: "Multi-modális Technológia",
-      subtitle: "Komplex feldolgozás",
+      icon: <Cpu size={24} className="text-indigo-400" />,
+      title: "Többféle adat feldolgozása",
+      subtitle: "Szöveg, kép és hang elemzése összetett problémák megoldásához",
       color: "cyan"
     },
     {
-      icon: <Shield size={22} className="text-emerald-500" />,
-      title: "Biztonságos AI Keretrendszer",
-      subtitle: "Megbízhatóság",
+      icon: <Shield size={24} className="text-blue-400" />,
+      title: "Megbízható védelem",
+      subtitle: "Szigorú adatvédelmi szabályok a bizalmas információk megőrzéséért",
       color: "emerald"
     },
     {
-      icon: <Database size={22} className="text-amber-500" />,
-      title: "Vektoros Adattárolás",
-      subtitle: "Tudásbázis",
+      icon: <Database size={24} className="text-purple-400" />,
+      title: "Intelligens tudásrendszer",
+      subtitle: "Vállalati adatokra és szakértői forrásokra épülő tudásrendszer",
       color: "amber"
     },
     {
-      icon: <Zap size={22} className="text-yellow-500" />,
-      title: "Sebességoptimalizált Modellek",
-      subtitle: "Valós idejű válaszok",
+      icon: <Zap size={24} className="text-indigo-400" />,
+      title: "Azonnali válaszok",
+      subtitle: "Nincs várakozás, gyors reakcióidővel segít minden helyzetben",
       color: "yellow"
     },
     {
-      icon: <Code size={22} className="text-rose-500" />,
-      title: "Integrált Fejlesztőkörnyezet",
-      subtitle: "API kapcsolatok",
+      icon: <Code size={24} className="text-purple-400" />,
+      title: "Egyszerű integráció",
+      subtitle: "Könnyedén illeszkedik meglévő rendszereibe.",
       color: "rose"
     },
     {
-      icon: <Lock size={22} className="text-indigo-500" />,
-      title: "Zárt Körű AI Rendszer",
-      subtitle: "Privát adatkezelés",
+      icon: <Lock size={24} className="text-blue-400" />,
+      title: "Testreszabhatóság",
+      subtitle: "Üzleti igényeire és iparágára optimalizált egyedi megoldások",
       color: "indigo"
     }
   ];
 
   return (
-      <div id="technologiak" className="relative px-4 md:px-8 py-12 bg-black/40 backdrop-blur-sm">
+      <div id="technologiak" className="relative z-10 px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-24">
+        {/* Use a less intense blur effect for the background */}
+
         <div className="max-w-screen-xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-center">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            Élvonalbeli Technológiák
+            Előnyök
           </span>
           </h2>
           <p className="text-gray-400 text-base text-center max-w-xl mx-auto mb-8">
-            Technológiai megközelítésünk a költséghatékonyság és a teljesítmény egyensúlyán alapul.
-            Mindig az üzleti problémához legjobban illeszkedő modellt választjuk, ami akár 70%-os megtakarítást is jelenthet.
+            Technológiáink konkrét üzleti problémákra kínálnak megoldást. Gyorsan bevezethetők, költséghatékonyak és mérhető eredményeket hoznak.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {technologies.map((tech, index) => (
                 <div
                     key={index}
-                    className={`bg-gray-900/60 rounded-lg overflow-hidden border border-gray-800 hover:border-${tech.color}-500/50 hover:bg-gray-800/60 transition duration-300 group`}
+                    className={`bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-blue-500/50 hover:bg-gray-800 transition duration-300 group`}
                 >
                   <div className={`bg-gradient-to-r from-${tech.color}-900/70 to-gray-900 p-4 flex items-center`}>
                     <div className={`p-2 rounded-full bg-${tech.color}-900/50 mr-3 group-hover:bg-${tech.color}-900/80 transition duration-300`}>
                       {tech.icon}
                     </div>
                     <div>
-                      <div className="text-xs font-medium text-gray-400 uppercase tracking-wide">{tech.subtitle}</div>
-                      <h3 className="text-base font-medium text-white">{tech.title}</h3>
+                      <h3 className="text-xs font-medium text-white uppercase tracking-wide">{tech.title}</h3>
+                      <div className="text-sm text-gray-400 ">{tech.subtitle}</div>
                     </div>
                   </div>
                 </div>

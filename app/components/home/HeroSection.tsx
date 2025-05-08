@@ -83,7 +83,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ time }) => {
                 <div className="opacity-0 animate-fadeSlideUp" style={{animationDelay: '0.5s', animationFillMode: 'forwards'}}>
                     <button
                         className="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full hover:shadow-lg hover:shadow-blue-500/30 transition flex items-center gap-2 font-medium hover:translate-y-[-2px]">
-                        Kezdje el most <ChevronRight size={18}/>
+                        Ingyenes konzultáció kérése <ChevronRight size={18}/>
                     </button>
                 </div>
             </div>

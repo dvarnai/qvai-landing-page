@@ -69,14 +69,10 @@ const HowItWorksSection: React.FC = () => {
   ];
 
   return (
-    <div id="hogyan-mukodik" className="relative z-10 px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-24">
-      {/* Use a less intense blur effect for the background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-purple-900/10"></div>
-
+    <div id="hogyan-mukodik" className="relative px-4 md:px-8 py-24 bg-black/40 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-12">
-          <p className="text-blue-400 font-medium mb-2">Folyamatunk</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
               Hogyan Működik
             </span>
