@@ -9,7 +9,7 @@ const ContactSection: React.FC = () => {
           Kapcsolat
         </span>
       </h2>
-      <div className="flex flex-col md:flex-row gap-12">
+      <div className="flex flex-col md:flex-row gap-12 container mx-auto">
         <div className="md:w-1/2">
           <h3 className="text-2xl font-bold mb-6">Lépjen kapcsolatba velünk</h3>
           <p className="text-gray-300 mb-8">

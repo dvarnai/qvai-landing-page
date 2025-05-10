@@ -59,7 +59,7 @@ const ServicesSection: React.FC = () => {
 
     return (
         <div id="szolgaltatasok"
-             className="relative z-10 px-6 md:px-12 lg:px-24 pt-16 pb-24 min-h-screen flex flex-col justify-center overflow-hidden section-blend-top">
+             className="relative z-10 px-6 md:px-12 lg:px-24 pt-16 pb-24 flex flex-col justify-center overflow-hidden section-blend-top">
             {/* Background */}
             <div className="absolute inset-0 z-[1]" style={{backgroundColor: 'rgb(10, 10, 15)'}}></div>
 
@@ -114,15 +114,15 @@ const ServicesSection: React.FC = () => {
             {/* Section heading */}
             <div className="mb-12 text-center relative z-10">
                 <h2 className="text-3xl md:text-4xl font-bold">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            Szolgáltatásaink
-          </span>
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                      Szolgáltatásaink
+                    </span>
                 </h2>
                 <div className="mt-4 w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
             </div>
 
             {/* Services grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10 flex-grow">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10 flex-grow container mx-auto">
                 {services.map((service, index) => (
                     <ServiceCard
                         key={index}

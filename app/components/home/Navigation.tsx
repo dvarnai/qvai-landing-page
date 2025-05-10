@@ -35,7 +35,6 @@ const Navigation: React.FC = () => {
             { label: 'Szolgáltatások', href: '#szolgaltatasok' },
             { label: 'Előnyök', href: '#elonyok' },
             { label: 'Hogyan működik', href: '#hogyan-mukodik' },
-            { label: 'Kapcsolat', href: '#kapcsolat' }
           ].map((item, i) => (
             <a
               key={i}
@@ -51,7 +50,7 @@ const Navigation: React.FC = () => {
           <button className="ml-4 relative group">
             <span className="absolute inset-0 rounded-md bg-gradient-to-tr from-blue-600 to-purple-600 opacity-90 group-hover:opacity-100 blur-sm transition-all duration-200 group-hover:blur-md"></span>
             <span className="relative block bg-gradient-to-tr from-blue-500 to-purple-600 rounded-md px-5 py-2 text-sm font-medium text-white">
-              Kapcsolatfelvétel
+              Kapcsolat
             </span>
           </button>
         </div>
@@ -77,7 +76,6 @@ const Navigation: React.FC = () => {
             { label: 'Szolgáltatások', href: '#szolgaltatasok' },
             { label: 'Előnyök', href: '#elonyok' },
             { label: 'Hogyan működik', href: '#hogyan-mukodik' },
-            { label: 'Kapcsolat', href: '#kapcsolat' }
           ].map((item, i) => (
             <a
               key={i}
@@ -92,7 +90,7 @@ const Navigation: React.FC = () => {
             className="mt-4 bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-md text-white font-medium"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Kapcsolatfelvétel
+            Kapcsolat
           </button>
         </div>
       </div>

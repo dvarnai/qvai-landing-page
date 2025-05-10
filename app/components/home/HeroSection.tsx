@@ -69,103 +69,105 @@ const HeroSection: React.FC<HeroSectionProps> = ({ time }) => {
                 />
             </div>
 
-            <div className="md:w-1/2 mb-12 md:mb-0 relative z-20">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 opacity-0 animate-fadeSlideUp" style={{animationDelay: '0.1s', animationFillMode: 'forwards'}}>
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-                        AI ügynökökkel
-                    </span>
-                    <br/>
-                    a Jövő Vállalkozásaiért
-                </h1>
-                <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-lg opacity-0 animate-fadeSlideUp" style={{animationDelay: '0.3s', animationFillMode: 'forwards'}}>
-                    Automatizálja ismétlődő folyamatait önálló AI ügynökökkel, hogy csapata arra koncentrálhasson, ami igazán számít.
-                </p>
-                <div className="opacity-0 animate-fadeSlideUp" style={{animationDelay: '0.5s', animationFillMode: 'forwards'}}>
-                    <button
-                        className="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full hover:shadow-lg hover:shadow-blue-500/30 transition flex items-center gap-2 font-medium hover:translate-y-[-2px]">
-                        Ingyenes konzultáció kérése <ChevronRight size={18}/>
-                    </button>
+            <div className="container flex">
+                <div className="w-full mb-12 md:mb-0 relative z-20">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 opacity-0 animate-fadeSlideUp" style={{animationDelay: '0.1s', animationFillMode: 'forwards'}}>
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                            AI ügynökökkel
+                        </span>
+                        <br/>
+                        a Jövő Vállalkozásaiért
+                    </h1>
+                    <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-lg opacity-0 animate-fadeSlideUp" style={{animationDelay: '0.3s', animationFillMode: 'forwards'}}>
+                        Automatizálja ismétlődő folyamatait önálló AI ügynökökkel, hogy csapata arra koncentrálhasson, ami igazán számít.
+                    </p>
+                    <div className="opacity-0 animate-fadeSlideUp" style={{animationDelay: '0.5s', animationFillMode: 'forwards'}}>
+                        <button
+                            className="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full hover:shadow-lg hover:shadow-blue-500/30 transition flex items-center gap-2 font-medium hover:translate-y-[-2px]">
+                            Ingyenes konzultáció kérése <ChevronRight size={18}/>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            {/* Visual elements container without orbiting animation */}
-            <div className="md:w-1/2 hidden md:flex justify-center relative z-10 opacity-0 animate-fadeIn" style={{animationDelay: '0.6s', animationFillMode: 'forwards'}}>
-                <div className="relative w-96 h-96">
-                    {/* Central glow effect - static */}
-                    <div
-                        className="absolute inset-0 rounded-full"
-                        style={{
-                            background: `radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.2), rgba(147, 51, 234, 0.2), transparent 70%)`,
-                            filter: 'blur(20px)',
-                            opacity: 0.8
-                        }}
-                    />
-
-                    {/* Static orbital rings - now truly static */}
-                    {[0, 1, 2].map((index) => (
+                {/* Visual elements container without orbiting animation */}
+                <div className="hidden lg:flex justify-center relative z-10 opacity-0 animate-fadeIn" style={{animationDelay: '0.6s', animationFillMode: 'forwards'}}>
+                    <div className="relative w-96 h-96">
+                        {/* Central glow effect - static */}
                         <div
-                            key={index}
-                            className="absolute border border-blue-500/20 hidden md:block"
+                            className="absolute inset-0 rounded-full"
                             style={{
-                                top: `${index * 15}%`,
-                                left: `${index * 15}%`,
-                                right: `${index * 15}%`,
-                                bottom: `${index * 15}%`,
-                                borderRadius: '50%',
-                                boxShadow: `0 0 20px rgba(59, 130, 246, 0.05)`,
-                                opacity: 0.7
+                                background: `radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.2), rgba(147, 51, 234, 0.2), transparent 70%)`,
+                                filter: 'blur(20px)',
+                                opacity: 0.8
                             }}
                         />
-                    ))}
 
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="relative">
-                            {/* Central icon - now static */}
-                            <Code
-                                size={90}
-                                className="text-white hidden md:block"
+                        {/* Static orbital rings - now truly static */}
+                        {[0, 1, 2].map((index) => (
+                            <div
+                                key={index}
+                                className="absolute border border-blue-500/20 hidden md:block"
                                 style={{
-                                    filter: 'drop-shadow(0 0 15px rgba(255, 255, 255, 0.5))'
+                                    top: `${index * 15}%`,
+                                    left: `${index * 15}%`,
+                                    right: `${index * 15}%`,
+                                    bottom: `${index * 15}%`,
+                                    borderRadius: '50%',
+                                    boxShadow: `0 0 20px rgba(59, 130, 246, 0.05)`,
+                                    opacity: 0.7
                                 }}
                             />
+                        ))}
 
-                            {/* Icons now positioned statically at fixed positions */}
-                            <Server
-                                size={80}
-                                className="text-blue-400 absolute opacity-80 hidden md:block"
-                                style={{
-                                    left: '-4rem',
-                                    top: '-4rem',
-                                    filter: 'drop-shadow(0 0 8px rgba(59, 130, 246, 0.5))'
-                                }}
-                            />
-                            <MessageSquare
-                                size={70}
-                                className="text-purple-400 absolute opacity-80 hidden md:block"
-                                style={{
-                                    right: '-3rem',
-                                    top: '-3rem',
-                                    filter: 'drop-shadow(0 0 8px rgba(147, 51, 234, 0.5))'
-                                }}
-                            />
-                            <Zap
-                                size={70}
-                                className="text-blue-400 absolute opacity-80 hidden md:block"
-                                style={{
-                                    right: '-3rem',
-                                    bottom: '-3rem',
-                                    filter: 'drop-shadow(0 0 8px rgba(59, 130, 246, 0.5))'
-                                }}
-                            />
-                            <Shield
-                                size={80}
-                                className="text-purple-400 absolute opacity-80 hidden md:block"
-                                style={{
-                                    left: '-4rem',
-                                    bottom: '-4rem',
-                                    filter: 'drop-shadow(0 0 8px rgba(147, 51, 234, 0.5))'
-                                }}
-                            />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="relative">
+                                {/* Central icon - now static */}
+                                <Code
+                                    size={90}
+                                    className="text-white hidden md:block"
+                                    style={{
+                                        filter: 'drop-shadow(0 0 15px rgba(255, 255, 255, 0.5))'
+                                    }}
+                                />
+
+                                {/* Icons now positioned statically at fixed positions */}
+                                <Server
+                                    size={80}
+                                    className="text-blue-400 absolute opacity-80 hidden md:block"
+                                    style={{
+                                        left: '-4rem',
+                                        top: '-4rem',
+                                        filter: 'drop-shadow(0 0 8px rgba(59, 130, 246, 0.5))'
+                                    }}
+                                />
+                                <MessageSquare
+                                    size={70}
+                                    className="text-purple-400 absolute opacity-80 hidden md:block"
+                                    style={{
+                                        right: '-3rem',
+                                        top: '-3rem',
+                                        filter: 'drop-shadow(0 0 8px rgba(147, 51, 234, 0.5))'
+                                    }}
+                                />
+                                <Zap
+                                    size={70}
+                                    className="text-blue-400 absolute opacity-80 hidden md:block"
+                                    style={{
+                                        right: '-3rem',
+                                        bottom: '-3rem',
+                                        filter: 'drop-shadow(0 0 8px rgba(59, 130, 246, 0.5))'
+                                    }}
+                                />
+                                <Shield
+                                    size={80}
+                                    className="text-purple-400 absolute opacity-80 hidden md:block"
+                                    style={{
+                                        left: '-4rem',
+                                        bottom: '-4rem',
+                                        filter: 'drop-shadow(0 0 8px rgba(147, 51, 234, 0.5))'
+                                    }}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

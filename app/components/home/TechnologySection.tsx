@@ -58,14 +58,16 @@ const TechnologySection = () => {
         {/* Use a less intense blur effect for the background */}
 
         <div className="max-w-screen-xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            Előnyök
-          </span>
-          </h2>
-          <p className="text-gray-400 text-base text-center max-w-xl mx-auto mb-8">
-            Technológiáink konkrét üzleti problémákra kínálnak megoldást. Gyorsan bevezethetők, költséghatékonyak és mérhető eredményeket hoznak.
-          </p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+              Előnyök
+            </span>
+            </h2>
+            <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
+              Technológiáink konkrét üzleti problémákra kínálnak megoldást. Gyorsan bevezethetők, költséghatékonyak és mérhető eredményeket hoznak.
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {technologies.map((tech, index) => (
